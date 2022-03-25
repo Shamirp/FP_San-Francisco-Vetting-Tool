@@ -94,19 +94,29 @@ Any additional information on datasets, including assessing the raw datasets can
 
 ## Machine Learning Model
 
-By using a machine learning model, specifically looking at Balanced Random Forest Classifier, we can attempt to predict what neighborhoods have the high score of quality living, based on the following factors:
- - Crime Rates
-- Average Home Cost
-- Unemployment Rates
-- Transportation Score
-- Economy Factor
-- Population Density
+We will train and test our model to categorize and predict whether a neighborhood has severe crime or is a safe area. 
+Neighborhood per crime incident type receive a score. 
 
-Overview of Model: Using a supervised machine learning model, we will train and test our model to examine and identify if certain living conditions have a correlation with our crime severity scores. 
+Violent crimes = 20 points
+Non-violent crime =  5 points 
+Disturbing the peace = 1 point
+Other = 0 points
 
-### Goal: 
+Each neighborhood total crime points were summed and then average to determine which areas were deemed safe. 
 
-Using our crime severity scores our model will determine if crime severity has a correlation with our data representing living condition features. We determined living conditions based on community resilience scores (employment, population, and transportation scores) and affordability (average total assessed value).
+
+Overview of Model: Using a supervised machine learning model, specifically the Balanced Random Forest Classifier, we will train and test our model to examine and identify if certain living conditions have a correlation with our crime severity scores. 
+
+Features being tested include:
+
+Violent Crime Rates
+Violation Rates
+Average Home Cost
+Unemployment Rates
+Transportation Score
+Economy Score
+Population Density
+Percent of People Living Alone
 
 
 ### Results: 
